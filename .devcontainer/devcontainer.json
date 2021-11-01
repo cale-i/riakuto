@@ -11,11 +11,54 @@
 	"dockerFile": "../Dockerfile",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-	
+	"settings": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": false,
+		"[graphql]": {
+			"editor.formatOnSave": true
+		},
+		"[javascript]": {
+			"editor.formatOnSave": true
+		},
+		"[javascriptreact]": {
+			"editor.formatOnSave": true
+		},
+		"[json]": {
+			"editor.formatOnSave": true
+		},
+		"[typescript]": {
+			"editor.formatOnSave": true
+		},
+		"[typescriptreact]": {
+			"editor.formatOnSave": true
+		},
+		"editor.lineNumbers": "on",
+		"editor.rulers": [
+			80
+		],
+		"editor.wordWrap": "on",
+		"eslint.packageManager": "yarn",
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"npm.packageManager": "yarn",
+		"typescript.enablePromptUseWorkspaceTsdk": true
+	},
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": []
-
+	"extensions": [
+		"CoenraadS.bracket-pair-colorizer-2",
+		"dbaeumer.vscode-eslint",
+		"donjayamanne.githistory",
+		"esbenp.prettier-vscode",
+		"msjsdiag.debugger-for-chrome",
+		"oderwat.indent-rainbow",
+		"stylelint.vscode-stylelint",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"vscode-icons-team.vscode-icons",
+		"wix.vscode-import-cost"
+	]
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
